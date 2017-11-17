@@ -1,0 +1,481 @@
+/*!
+* Start Bootstrap - SB Admin Bootstrap Admin Template (http://startbootstrap.com)
+* Code licensed under the Apache License v2.0.
+* For details, see http://www.apache.org/licenses/LICENSE-2.0.
+*/
+/* Global Styles */
+
+.calend{
+	margin-top:25px;
+	margin-left:30px;
+
+
+
+
+}
+.encabezado1{
+	text-align:center;
+	background-color:#dff0d8;
+
+font-weight:bold;
+
+}
+.encabezado2{
+	text-align:center;
+background-color:#dff0d8;
+	font-weight:bold;
+
+
+
+
+}
+
+
+#buscaralumno{
+	margin-top:30px; 
+	
+	
+	
+
+
+}
+#d ul{
+	
+	background-color:#dfdfdf;
+	
+	
+	
+
+
+}
+
+.insc{
+	background-color:#f1f1f1;
+	padding-bottom:10px;
+	
+
+
+}
+#textoinsc{
+	font-weight:bold;
+
+
+}
+#datos{
+	padding:15px;
+
+
+}
+
+
+.cursor {
+    cursor: pointer !important;
+}
+
+
+.precio {
+    text-align: right !important;
+}
+
+.raya {
+    text-align:center; !important;
+}
+#calendario {
+display:none;
+width:180px;
+height: 220px;
+position:fixed;
+left:50%;
+top:50%;
+z-index:2000;
+border: #000000 solid 1px;
+padding: 16px 6px 6px 12px;
+margin-top:-110px;
+margin-left:-90px;
+background-position:top center; 
+background-color:#fff;
+}
+#calendario div {
+width: 18px;
+height: 18px;
+float: left;
+border: #000 solid 1px;
+margin: 2px;
+font-size: 10px;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+line-height: 18px;
+z-index:2;
+}
+#calendario div b {
+color: #0000FF;
+cursor:pointer;
+}
+#calendario #atras {
+width: 28px;
+height: 28px;
+float: left;
+border: #000 solid 1px;
+cursor:pointer;
+background-repeat:no-repeat;
+background-position:-49px 0;
+border:none;
+margin:-8px 0 0 -10px;
+}
+#calendario #atras:hover {
+background-position:-25px 0;
+
+
+
+
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  
+}
+#calendario #adelante {
+width: 28px;
+height: 28px;
+float: left;
+border:none;
+cursor:pointer;
+margin:-8px 0 0 8px;
+}
+#calendario #nombremes {
+width: 100px;
+height: 28px;
+float: left;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+text-align: center;
+border:none;
+line-height:0px !important;
+margin:0 0 0 6px;
+}
+#calendario #clear{
+width: 180px;
+height:1px;
+border:none;
+clear: both;
+}
+#calendario div.diaactual b{
+color:#F9181C;
+
+
+}
+#calendario1 {
+display:none;
+width:180px;
+height: 220px;
+position:fixed;
+left:50%;
+top:50%;
+z-index:2000;
+border: #000000 solid 1px;
+padding: 16px 6px 6px 12px;
+margin-top:-110px;
+margin-left:-90px;
+background-position:top center;
+background-color:#fff; 
+
+}
+#calendario1 div {
+width: 18px;
+height: 18px;
+float: left;
+border: #000 solid 1px;
+margin: 2px;
+font-size: 10px;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+line-height: 18px;
+z-index:2;
+}
+#calendario1 div b {
+color: #0000FF;
+cursor:pointer;
+}
+#calendario1 #atras {
+width: 28px;
+height: 28px;
+float: left;
+border: #000 solid 1px;
+cursor:pointer;
+background-repeat:no-repeat;
+background-position:-49px 0;
+border:none;
+margin:-8px 0 0 -10px;
+}
+#calendario1 #atras:hover {
+background-position:-25px 0;
+
+
+
+
+}
+#calendario1 #adelante {
+width: 28px;
+height: 28px;
+float: left;
+border:none;
+cursor:pointer;
+margin:-8px 0 0 8px;
+}
+#calendario1 #nombremes {
+width: 100px;
+height: 28px;
+float: left;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+text-align: center;
+border:none;
+line-height:0px !important;
+margin:0 0 0 6px;
+}
+#calendario1 #clear{
+width: 180px;
+height:1px;
+border:none;
+clear: both;
+}
+#calendario1 div.diaactual b{
+color:#F9181C;
+
+
+}
+body {
+margin-top: 100px;
+background-color: #222;
+overflow-x:hidden;
+}
+@media(min-width:768px) {
+body {
+margin-top: 50px;
+}
+}
+#asistente{
+width:185px;
+margin-left: 10px;
+padding-left:10px;
+background-color:rgba(255,255,255,1.00);
+position:absolute;
+box-shadow:2px 2px 4px rgba(0,0,0,0.49);
+display:none;
+z-index: 1000;
+cursor:pointer;
+}
+#wrapper {
+padding-left: 0;
+}
+#page-wrapper {
+width: 100%;
+padding: 0;
+background-color: #fff;
+}
+.huge {
+font-size: 50px;
+line-height: normal;
+}
+@media(min-width:768px) {
+#wrapper {
+padding-left: 225px;
+}
+#page-wrapper {
+padding: 10px;
+}
+}
+/* Top Navigation */
+.top-nav {
+padding: 0 15px;
+}
+.top-nav>li {
+display: inline-block;
+float: left;
+}
+.top-nav>li>a {
+padding-top: 15px;
+padding-bottom: 15px;
+line-height: 20px;
+color: #999;
+}
+.top-nav>li>a:hover,
+.top-nav>li>a:focus,
+.top-nav>.open>a,
+.top-nav>.open>a:hover,
+.top-nav>.open>a:focus {
+color: #fff;
+background-color: #000;
+}
+.top-nav>.open>.dropdown-menu {
+float: left;
+position: absolute;
+margin-top: 0;
+border: 1px solid rgba(0,0,0,.15);
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+background-color: #fff;
+-webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.top-nav>.open>.dropdown-menu>li>a {
+white-space: normal;
+}
+ul.message-dropdown {
+padding: 0;
+max-height: 250px;
+overflow-x: hidden;
+overflow-y: auto;
+}
+li.message-preview {
+width: 275px;
+border-bottom: 1px solid rgba(0,0,0,.15);
+}
+li.message-preview>a {
+padding-top: 15px;
+padding-bottom: 15px;
+}
+li.message-footer {
+margin: 5px 0;
+}
+ul.alert-dropdown {
+width: 200px;
+}
+/* Side Navigation */
+@media(min-width:768px) {
+.side-nav {
+position: fixed;
+top: 51px;
+left: 225px;
+width: 225px;
+margin-left: -225px;
+border: none;
+border-radius: 0;
+overflow-y: auto;
+background-color: #222;
+bottom: 0;
+overflow-x: hidden;
+padding-bottom: 40px;
+}
+.side-nav>li>a {
+width: 225px;
+}
+.side-nav li a:hover,
+.side-nav li a:focus {
+outline: none;
+background-color: #000 !important;
+}
+}
+.side-nav>li>ul {
+padding: 0;
+}
+.side-nav>li>ul>li>a {
+display: block;
+padding: 10px 15px 10px 38px;
+text-decoration: none;
+color: #999;
+}
+.side-nav>li>ul>li>a:hover {
+color: #fff;
+}
+/* Flot Chart Containers */
+.flot-chart {
+display: block;
+height: 400px;
+}
+.flot-chart-content {
+width: 100%;
+height: 100%;
+}
+/* Custom Colored Panels */
+.huge {
+font-size: 40px;
+}
+.panel-green {
+border-color: #5cb85c;
+}
+.panel-green > .panel-heading {
+border-color: #5cb85c;
+color: #fff;
+background-color: #5cb85c;
+}
+.panel-green > a {
+color: #5cb85c;
+}
+.panel-green > a:hover {
+color: #3d8b3d;
+}
+.panel-red {
+border-color: #d9534f;
+}
+.panel-red > .panel-heading {
+border-color: #d9534f;
+color: #fff;
+background-color: #d9534f;
+}
+.panel-red > a {
+color: #d9534f;
+}
+.panel-red > a:hover {
+color: #b52b27;
+}
+.panel-yellow {
+border-color: #f0ad4e;
+}
+.panel-yellow > .panel-heading {
+border-color: #f0ad4e;
+color: #fff;
+background-color: #f0ad4e;
+}
+.panel-yellow > a {
+color: #f0ad4e;
+}
+.panel-yellow > a:hover {
+color: #df8a13;
+}
+.campo{
+width:20px;
+}
+.textocomp{
+position:absolute;
+width:60%;
+height: 600px;
+margin-left: -30%;
+margin-top: -300px;
+top:50%;
+left:50%;
+background-color: white;
+box-shadow: 3px 3px 7px rgba(0,0,0,0.5);
+}
+.izq{
+float:right !important;
+margin-left:800px;
+margin-top:-35px;
+}
+#email{
+cursor:pointer;
+}
+.rojo{
+background-color:red;
+color:#fff;
+text-align:center;
+vertical-align:middle;
+}
+.verde{
+background-color:#1DF669!important;
+color:#fff;
+text-align:center;
+font-weight:bold;
+}
+.botont{
+vertical-align:middle;
+margin:0 auto;
+}
+#pasadomañana{
+float: left !important;
+margin-top:10px !important;
+}

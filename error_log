@@ -1,0 +1,5 @@
+[25-Jun-2017 00:32:44 UTC] PHP Fatal error:  Cannot use object of type mysqli_result as array in /home/brienzai/public_html/brienza_14567!/buscaremail.php on line 37
+[25-Jun-2017 03:35:04 UTC] PHP Fatal error:  Cannot use object of type mysqli_result as array in /home/brienzai/public_html/brienza_14567!/buscarmail.php on line 31
+[25-Jun-2017 03:35:04 UTC] PHP Fatal error:  Cannot use object of type mysqli_result as array in /home/brienzai/public_html/brienza_14567!/buscarmail.php on line 31
+[25-Jun-2017 03:35:04 UTC] PHP Fatal error:  Cannot use object of type mysqli_result as array in /home/brienzai/public_html/brienza_14567!/buscarmail.php on line 31
+[25-Jun-2017 03:35:39 UTC] PHP Fatal error:  Cannot use object of type mysqli_result as array in /home/brienzai/public_html/brienza_14567!/buscarmail.php on line 31
